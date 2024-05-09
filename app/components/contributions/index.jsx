@@ -2,6 +2,7 @@
 
 import GitHubCalendar from "react-github-calendar";
 import SectionTitle from "../helper/section-title";
+import { userData } from "@/data/user-data";
 
 
 function Contributions() {
@@ -11,8 +12,8 @@ function Contributions() {
 
       <div className="w-full flex justify-center py-12">
         <GitHubCalendar
-          username="said7388"
-          blockSize={14}
+          username={userData.githubUser}
+          blockSize={10}
         />
       </div>
     </div>

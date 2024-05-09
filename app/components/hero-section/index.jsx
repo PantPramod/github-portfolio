@@ -23,7 +23,7 @@ function HeroSection({ profile }) {
               className="rounded-full transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
             />
           </div>
-          <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center">
+          <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center  mx-auto">
             {profile.bio}
           </p>
 
@@ -147,7 +147,7 @@ function HeroSection({ profile }) {
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">hireable:</span>
-                <span className="text-orange-400">{profile?.hireable.toString()}</span>
+                <span className="text-orange-400">{profile?.hireable?.toString()}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div><span className="text-gray-400">{`};`}</span></div>
